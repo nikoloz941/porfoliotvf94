@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription à l'événement</title>
+    <style>
+        table {
+            width: 60%;
+            margin: auto;
+            border: 0;
+        }
+        td {
+            padding: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 5px;
+        }
+        .checkbox-group, .radio-group {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <a href="#formulaire-inscription">S'inscrire à l'événement</a>
+
+    <h2 id="formulaire-inscription">Formulaire d'inscription à l'événement</h2>
+
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td><label for="pseudo">Pseudo :</label></td>
+                <td><input type="text" id="pseudo" name="pseudo" placeholder="Votre pseudo" maxlength="30" required></td>
+            </tr>
+            <tr>
+                <td><label for="mot_de_passe">Mot de passe :</label></td>
+                <td><input type="password" id="mot_de_passe" name="mot_de_passe" placeholder="Votre mot de passe" maxlength="20" required></td>
+            </tr>
+            <tr>
+                <td><label for="prenom">Prénom :</label></td>
+                <td><input type="text" id="prenom" name="prenom" placeholder="Votre prénom" maxlength="50" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email :</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Votre email" maxlength="100" required></td>
+            </tr>
+            <tr>
+                <td><label for="avatar">Avatar (photo) :</label></td>
+                <td><input type="file" id="avatar" name="avatar" accept="image/*" required></td>
+            </tr>
+            <tr>
+                <td><label for="pays">Pays :</label></td>
+                <td>
+                    <select id="pays" name="pays" required>
+                        <option value="" disabled selected>Choisissez votre pays</option>
+                        <option value="france">France</option>
+                        <option value="belgique">Belgique</option>
+                        <option value="suisse">Suisse</option>
+                        <option value="canada">Canada</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Quels sont vos fruits préférés :</td>
+                <td class="checkbox-group">
+                    <label><input type="checkbox" name="fruits" value="pomme"> Pomme</label>
+                    <label><input type="checkbox" name="fruits" value="banane"> Banane</label>
+                    <label><input type="checkbox" name="fruits" value="orange"> Orange</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Civilité :</td>
+                <td class="radio-group">
+                    <label><input type="radio" name="civilite" value="monsieur" required> Monsieur</label>
+                    <label><input type="radio" name="civilite" value="madame" required> Madame</label>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td><label for="code_postal">Code postal :</label></td>
+                <td><input type="number" id="code_postal" name="code_postal" placeholder="Votre code postal" maxlength="5" required></td>
+            </tr>
+            <tr>
+                <td><label for="adresse">Adresse :</label></td>
+                <td><textarea id="adresse" name="adresse" placeholder="Votre adresse" maxlength="255" rows="3" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="date_naissance">Date de naissance :</label></td>
+                <td><input type="date" id="date_naissance" name="date_naissance" required></td>
+            </tr>
+            <tr>
+                <td><label for="jauge">Jauge (0-100) :</label></td>
+                <td><input type="range" id="jauge" name="jauge" min="0" max="100"></td>
+            </tr>
+            <tr>
+                <td><label for="telephone">Téléphone :</label></td>
+                <td><input type="tel" id="telephone" name="telephone" placeholder="Votre numéro de téléphone" maxlength="10" required></td>
+            </tr>
+            <tr>
+                <td><label for="recherche">Recherche :</label></td>
+                <td><input type="search" id="recherche" name="recherche" placeholder="Recherche..."></td>
+            </tr>
+            <tr>
+                <td><label for="url">URL :</label></td>
+                <td><input type="url" id="url" name="url" placeholder="Votre site web ou lien préféré"></td>
+            </tr>
+            <tr>
+                <td><label for="couleur">Couleur préférée :</label></td>
+                <td><input type="color" id="couleur" name="couleur"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Valider">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <a href="index.html">retour au sommaire</a> <br>
+    <br>
+    
+    <a href="../index.html">retour a l'Acceuil</a>
+
+</body>
+</html>

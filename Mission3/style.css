@@ -1,0 +1,219 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="file"], input[type="number"], input[type="date"], input[type="tel"], input[type="search"], input[type="url"], input[type="color"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="file"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="tel"]:focus, input[type="search"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus, select:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+.checkbox-group, .radio-group {
+    display: flex;
+    gap: 15px;
+}
+
+.checkbox-group label, .radio-group label {
+    font-weight: normal;
+}
+
+
+input[type="submit"] {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #357ab7;
+    transform: scale(1.05);
+}
+
+
+td {
+    vertical-align: top;
+}
+
+td:first-child {
+    text-align: right;
+    padding-right: 15px;
+    color: #333;
+}
+
+td:last-child {
+    width: 70%;
+}
+
+
+.button {
+    background-color: #357ab7;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #c1271a;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.business-card {
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.business-card h1 {
+    font-size: 1.8em;
+    color: #333333;
+}
+
+
+.business-card h2 {
+    font-size: 1.2em;
+    color: #777777;
+    margin-top: 10px;
+}
+
+
+.business-card p {
+    font-size: 1em;
+    color: #555555;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 600px) {
+    .business-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .business-card h1 {
+        font-size: 1.5em;
+    }
+
+    .business-card h2 {
+        font-size: 1em;
+    }
+
+    .business-card p {
+        font-size: 0.9em;
+    }
+
+    .social-links img {
+        width: 25px;
+        height: 25px;
+    }
+}
+.button {
+    display: inline-block;
+    background-color: #2e5a7d; 
+    color: white; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    margin: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.button:hover {
+    background-color: #1e3c50; 
+}
