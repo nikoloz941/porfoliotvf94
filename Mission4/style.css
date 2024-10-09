@@ -1,0 +1,85 @@
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 780px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 5px solid #3388CC;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.header .info {
+    width: 60%;
+    
+}
+.header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+.header p {
+    font-size: 18px;
+    color: #666;
+    margin: 5px 0;
+}
+.header .photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #3388CC;
+}
+
+
+.section {
+    margin-bottom: 30px;
+}
+.section h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #3388CC;
+    border-bottom: 2px solid #3388CC;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+.section .content {
+    padding-left: 10px;
+}
+.bloc {
+    margin-bottom: 10px;
+}
+.bloc p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+.bloc strong {
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .header .photo {
+        width: 120px;
+        height: 120px;
+    }
+}
