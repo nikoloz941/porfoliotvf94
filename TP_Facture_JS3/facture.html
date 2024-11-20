@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facture</title>
+    <script src="facture.js"></script>
+    <link rel="stylesheet" href="facture.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Facture</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Article</th>
+                <th>Prix unitaire</th>
+                <th>Quantité</th>
+                <th>Résultat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" id="article1" value="Article 1"></td>
+                <td><input type="number" id="prix1" value="0"></td>
+                <td><input type="number" id="quantite1" value="0"></td>
+                <td><input type="text" id="resultat1" value="0" disabled></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="article2" value="Article 2"></td>
+                <td><input type="number" id="prix2" value="0"></td>
+                <td><input type="number" id="quantite2" value="0"></td>
+                <td><input type="text" id="resultat2" value="0" disabled></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="article3" value="Article 3"></td>
+                <td><input type="number" id="prix3" value="0"></td>
+                <td><input type="number" id="quantite3" value="0"></td>
+                <td><input type="text" id="resultat3" value="0" disabled></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="total">
+        <label for="totalTTC">Total TTC :</label>
+        <input type="text" id="totalTTC" value="0" disabled>
+    </div>
+
+    <div class="buttons">
+        <button onclick="calculer()">Calculer</button>
+        <button onclick="reinitialiser()">Réinitialiser</button>
+    </div>
+
+    <a href="../index.html" class="back-button">Retour au sommaire</a>
+</div>
+
+</body>
+</html>
