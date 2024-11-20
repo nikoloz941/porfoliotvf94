@@ -1,48 +1,81 @@
+
 body {
-    background-color: grey;
+    background-color: #2c2c2c; 
+    color: white;
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
+
 button {
-    width: 120px;
-    height: 120px;
-    background-color: black;
+    width: 100px;
+    height: 100px;
+    background-color: #1f1f1f; 
     border-radius: 20px;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin: 10px;
-    transition: 0.25s;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: white;
-    border: 2px solid black;
-    color: black;
-    transition: 150ms;
+    background-color: #ff4500; 
+    color: white;
+    transform: scale(1.1); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
 }
 
-input.t1 {
-    width: 100px;
+
+input.t {
+    width: 120px;
     height: 50px;
     background-color: white;
     border: 2px solid black;
     border-radius: 10px;
-    color: black;
+    color: #333; 
     font-size: 1.2em;
     margin: 10px;
-    font-family: verdana;
-    padding: 10px;
-}
-
-input.t3 {
-    width: 250px;
-    height: 50px;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-    color: black;
-    font-size: 2em;
-    margin: 5px;
-    font-family: verdana;
     padding: 10px;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+
+input.t34 {
+    width: 250px;
+    height: 50px;
+    background-color: #fff;
+    border: 2px solid #444; 
+    border-radius: 10px;
+    color: black;
+    font-size: 1.5em;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+
+center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+}
+
+/* Titre */
+h1 {
+    font-size: 2em;
+    color: #ff4500; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
